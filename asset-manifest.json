@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/inventory-managment-system-react/static/css/main.59a1440e.css",
+    "main.js": "/inventory-managment-system-react/static/js/main.afdd6784.js",
+    "static/css/306.5d4c01ab.chunk.css": "/inventory-managment-system-react/static/css/306.5d4c01ab.chunk.css",
+    "static/js/306.a7868a78.chunk.js": "/inventory-managment-system-react/static/js/306.a7868a78.chunk.js",
+    "static/css/296.67665e74.chunk.css": "/inventory-managment-system-react/static/css/296.67665e74.chunk.css",
+    "static/js/296.98e04ee9.chunk.js": "/inventory-managment-system-react/static/js/296.98e04ee9.chunk.js",
+    "static/css/116.40a26300.chunk.css": "/inventory-managment-system-react/static/css/116.40a26300.chunk.css",
+    "static/js/116.f8d0bc7d.chunk.js": "/inventory-managment-system-react/static/js/116.f8d0bc7d.chunk.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/inventory-managment-system-react/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/signup.jpg": "/inventory-managment-system-react/static/media/signup.af542fc95dbbd25311b5.jpg",
+    "static/media/login.jpg": "/inventory-managment-system-react/static/media/login.7303fd17bffdc9f3221f.jpg",
+    "static/media/404_error.png": "/inventory-managment-system-react/static/media/404_error.030793c87f6ffc67743a.png",
+    "static/media/forgotPassword.jpg": "/inventory-managment-system-react/static/media/forgotPassword.11c32896c615c23cd8dc.jpg",
+    "static/media/forgot-bg.png": "/inventory-managment-system-react/static/media/forgot-bg.feae6741a0a3b9ac2157.png",
+    "static/media/login-bg.png": "/inventory-managment-system-react/static/media/login-bg.6559997db0314e8fa663.png",
+    "index.html": "/inventory-managment-system-react/index.html",
+    "main.59a1440e.css.map": "/inventory-managment-system-react/static/css/main.59a1440e.css.map",
+    "main.afdd6784.js.map": "/inventory-managment-system-react/static/js/main.afdd6784.js.map",
+    "306.5d4c01ab.chunk.css.map": "/inventory-managment-system-react/static/css/306.5d4c01ab.chunk.css.map",
+    "306.a7868a78.chunk.js.map": "/inventory-managment-system-react/static/js/306.a7868a78.chunk.js.map",
+    "296.67665e74.chunk.css.map": "/inventory-managment-system-react/static/css/296.67665e74.chunk.css.map",
+    "296.98e04ee9.chunk.js.map": "/inventory-managment-system-react/static/js/296.98e04ee9.chunk.js.map",
+    "116.40a26300.chunk.css.map": "/inventory-managment-system-react/static/css/116.40a26300.chunk.css.map",
+    "116.f8d0bc7d.chunk.js.map": "/inventory-managment-system-react/static/js/116.f8d0bc7d.chunk.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/inventory-managment-system-react/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59a1440e.css",
+    "static/js/main.afdd6784.js"
+  ]
+}
