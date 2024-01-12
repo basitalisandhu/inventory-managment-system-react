@@ -1,0 +1,48 @@
+@import '../../../variable.scss';
+@import '../../../css-config/mixin.scss';
+
+.forgot-password-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: url('../../../images/forgot-bg.png');
+    background-position: center;
+    overflow-y: hidden;
+    // background-color: #ccc;
+
+
+    .forgot-password-container {
+        width: 30%;
+        margin: auto;
+
+        @include lg {
+            width: 50%;
+        }
+
+        @include sm {
+            width: 80%;
+        }
+    }
+
+    img {
+        width: 40%;
+        margin: 3rem auto 1rem auto;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: $secondaryColor;
+        font-weight: 500;
+        margin-bottom: 2rem;
+
+        @include sm {
+            font-size: 2rem;
+        }
+    }
+
+    input {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: .8rem;
+        border-radius: 7px;
+    }
+}

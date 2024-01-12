@@ -1,0 +1,21 @@
+
+@media screen and (max-width: "900px") {
+    .loggedHome-wrapper .side-menu {
+        display: none;
+    }
+
+    .loggedHome-wrapper .routes-dashboard {
+        width: 80%;
+    }
+
+    .loggedHome-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+
+        .mobile-menu {
+            width: 100%;
+        }
+    }
+}

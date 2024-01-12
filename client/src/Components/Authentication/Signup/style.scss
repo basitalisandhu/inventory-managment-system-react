@@ -1,0 +1,97 @@
+@import '../../../variable.scss';
+@import '../../../css-config/mixin.scss';
+
+.signup-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    gap: 1rem;
+    background: url('../../../images/login-bg.png');
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+
+    @include lg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .signup-left {
+        width: 50%;
+
+        @include lg {
+            width: 70%;
+        }
+
+        img {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 10px;
+
+            @include lg {
+                display: none;
+            }
+        }
+    }
+
+    .signup-right {
+        width: 50%;
+        text-align: left;
+        padding: 3rem;
+        min-height: 100vh;
+        // display: flex;
+        // justify-content: center;
+        // flex-direction: column;
+        background-color: #f5f2f2;
+        margin-top: 0;
+        margin-right: 2rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        @include lg {
+            width: 60%;
+        }
+
+        @include sm {
+            width: 100%;
+        }
+        
+        span.welcome {
+            color: $primaryColor;
+            font-size: 1rem;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .links-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            color: $secondaryColor;
+            font-size: 0.8rem;
+        }
+    }
+    
+    h1 {
+    font-size: 3rem;
+    color: $secondaryColor;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    }
+
+    input {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: .6rem;
+        border-radius: 7px;
+    }
+
+}
+
+
