@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }) => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${TOKEN}`,
+          // Authorization: `Bearer ${TOKEN}`,
         },
         body: JSON.stringify(data),
       });

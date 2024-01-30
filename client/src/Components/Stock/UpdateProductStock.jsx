@@ -137,8 +137,8 @@ const UpdateProductStock = () => {
   return (
     <div>
       {loading && <Loading />}
-      <h1 className="text-4xl mb-4 font-semi-bold color-purple-700">
-        Update Product Stock
+      <h1 className="mt-8 text-4xl mb-4 font-semi-bold color-purple-700">
+        Add Product Stock
       </h1>
       <p>Update stock detail</p>
       <div className="container px-5 py-6 mx-auto">

@@ -23,6 +23,7 @@ import LoggedHome from "./Pages/HomePage/LoggedHome";
 import NotFound from "./Pages/NotFound/NotFound";
 // import Login from "./Components/Authentication/Login/Login";
 import Loading from "./Components/common/Loading/Loading";
+import AddProductStock from "./Components/Stock/AddProductStock";
 // import Signup from "./Components/Authentication/Signup/Signup";
 // import ForgotPassword from "./Components/Authentication/ForgotPassword/ForgotPassword";
 
@@ -43,9 +44,13 @@ function App() {
         <div className="App">
           {/* <Header></Header> */}
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" exact element={<Login />} />
             <Route path="/dashboard/*" element={<LoggedHome />}></Route>
-            <Route path="/" element={<Login />} />
+            {/* <Route path="/" element={<Login />} /> */}
+            <Route
+              path="/inventory-managment-system-react"
+              element={<Login />}
+            />
 
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
@@ -54,8 +59,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/mobile" element={<MobileMenu />} />
+            <Route path="dashboard/add-stock" element={<AddProductStock />} />
           </Routes>
-          {/* <Footer></Footer> */}
         </div>
       </Suspense>
       <ToastContainer

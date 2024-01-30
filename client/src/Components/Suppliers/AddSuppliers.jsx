@@ -27,26 +27,27 @@ const AddSuppliers = () => {
   };
 
   const handleAddSupplierSubmit = async (event) => {
-    console.log(supplierData, "line 22...");
+    console.log(BASE_URL, "line 22...");
 
     try {
       setLoading(true);
-      const response = await fetch(`${BASE_URL}${API_URL.SUPPLIER}`, {
+      // debugger;
+      const response = await fetch(`http://54.208.146.71/supplier/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${TOKEN}`,
+          Authorization: `${TOKEN}`,
         },
         body: JSON.stringify(supplierData),
       });
 
-      if (response) {
+      if (response.ok) {
         setLoading(false);
         toast.success("Supplier added successfully");
         navigate("/dashboard/suppliers");
         console.log("Request succeeded:", response);
       } else {
-        console.error("Request failed:", response.statusText);
+        toast.error("Request failed:", response.statusText);
       }
     } catch (error) {
       console.error("Error occurred:", error);
@@ -130,7 +131,7 @@ const AddSuppliers = () => {
     <>
       {loading && <Loading />}
       <h1 className=" mt-8 text-start sm:text-3xl text-xl font-medium title-font text-gray-900">
-        New Supplier
+        {supplierId ? "Update Supplier" : "New Supplier"}
       </h1>
       <p className="text-md text-start">
         Add new supplier with details information.
@@ -263,13 +264,17 @@ const AddSuppliers = () => {
       <div className="py-4 flex justify-center items-center w-[30%] ">
         {supplierId ? (
           <ButtonSecondary
-          text={"Add Supplier"}
-          type="button"
-          onClick={handleAddSupplierSubmit}
-          className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-amber-200 hover:bg-amber-200 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-        />
-        ): (
-          <ButtonSecondary text={"Update Supplier"} type="button" onClick={handleUpdateSupplier} />
+            text={"Update Supplier"}
+            type="button"
+            onClick={handleUpdateSupplier}
+            className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-amber-200 hover:bg-amber-200 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          />
+        ) : (
+          <ButtonSecondary
+            text={"Add Supplier"}
+            type="button"
+            onClick={handleAddSupplierSubmit}
+          />
         )}
 
         <ToastContainer />

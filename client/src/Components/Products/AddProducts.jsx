@@ -69,7 +69,7 @@ const AddProducts = () => {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${TOKEN}`,
+            Authorization: `${TOKEN}`,
           },
           body: JSON.stringify(productInfo),
         }
@@ -107,7 +107,7 @@ const AddProducts = () => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${TOKEN}`,
+          Authorization: `${TOKEN}`,
           "ngrok-skip-browser-warning": "69420",
         },
       });

@@ -62,14 +62,14 @@ const SaleHistory = () => {
                     scope="row"
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                   >
-                    {saleItem.customer}
+                    {saleItem?.customer || "NA"}
                   </th>
 
-                  <td class="px-6 py-4">{saleItem.created_at}</td>
-                  <td class="px-6 py-4">{saleItem.total_price}</td>
-                  <td class="px-6 py-4">{saleItem.details}</td>
+                  <td class="px-6 py-4">{saleItem?.created_at || "NA"}</td>
+                  <td class="px-6 py-4">{saleItem?.total_price || "NA"}</td>
+                  <td class="px-6 py-4">{saleItem?.details || "NA"}</td>
                   <td className="px-6 py-4">
-                    <div onClick={() => removeSales(saleItem.id)}>
+                    <div onClick={() => removeSales(saleItem?.id)}>
                       <FaTrash />
                     </div>
                   </td>

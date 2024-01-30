@@ -10,6 +10,7 @@ import Loading from "../common/Loading/Loading";
 import { Link } from "react-router-dom";
 import ButtonSecondary from "../common/ButtonSecondary/ButtonSecondary";
 
+console.log(BASE_URL);
 const ViewSuppliers = () => {
   const [suppliers, setSuppliers] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -47,7 +48,7 @@ const ViewSuppliers = () => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${TOKEN}`,
+          Authorization: `${TOKEN}`,
           "ngrok-skip-browser-warning": "69420",
         },
       });
